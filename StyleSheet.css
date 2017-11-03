@@ -1,0 +1,141 @@
+﻿body {
+	background-image: url("images/crossword.png");
+}
+
+p {
+	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+	font-family: 'Lobster Two', cursive;
+}
+
+h2 {
+	position: relative;
+	top: 45px;
+	text-align: center;
+	padding-left: 50px;
+	font-family: 'Pacifico', cursive;
+}
+
+ul {
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	top: 0;
+	width: 105%;
+	position: absolute;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+}
+
+li a:hover {
+	background-color: #111;
+
+}
+
+#active {
+	background-color: #e60000;
+}
+
+header img {
+	border-radius: 50%;
+	width: 130px;
+	height: auto;
+	display: block;
+	margin: auto;
+	
+}
+
+
+header h1 {
+	position: relative;
+	padding: 10px;
+	padding-right: 25px;
+	top: 18px;
+	left: 10px;
+	text-align: center;
+}
+
+table {
+	width: 100px;
+	margin: auto;
+	position: relative;
+	top: 45px;
+}
+
+footer {
+	height: 75px;
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+	bottom: 0
+	position: relative;
+}
+
+.contact {
+	position: relative;
+	margin-top: 15px;
+	top: 50px;
+	padding-left: 50px;
+	text-align: center;
+}
+
+.contact a {
+	text-decoration: none;
+}
+
+.contact a:visited {
+	color: blue;
+}
+
+.contact footer {
+	padding-left: 0px;
+}
+
+.family {
+	position: relative;
+	top: 10px;
+}
+
+.family header {
+	text-align: center;
+	font-size: 20px;
+}
+
+.family p {
+	margin: 90px;
+}
+
+.friend header {
+	text-align: center;
+	font-size: 20px;
+}
+
+.friend footer {
+	text-align: center;
+	padding-left: 25px;
+}
+
+.friend p {
+	margin: 90px;
+}
+
+.footer {
+	padding: 30px;
+	font-size: 10px;
+}
