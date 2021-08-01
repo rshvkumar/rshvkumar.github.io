@@ -5,17 +5,15 @@
     function selected() {
         if(document.getElementById('education').checked) {
             document.getElementById('Education box').style.display = 'block';
-        } else {
-            document.getElementById('Education box').style.display = 'block';
-        }
-        if(document.getElementById('hobby').checked) {
+            document.getElementById('Hobby box').style.display = 'none';
+            document.getElementById('Other box').style.display = 'none';
+        } else if(document.getElementById('hobby').checked) {
+            document.getElementById('Education box').style.display = 'none';
             document.getElementById('Hobby box').style.display = 'block';
-        } else {
-            document.getElementById('Hobby box').style.display = 'block';
-        }
-        if(document.getElementById('other').checked) {
-            document.getElementById('Other box').style.display = 'block';
-        } else {
+            document.getElementById('Other box').style.display = 'none';
+        } else if(document.getElementById('other').checked) {
+            document.getElementById('Education box').style.display = 'none';
+            document.getElementById('Hobby box').style.display = 'none';
             document.getElementById('Other box').style.display = 'block';
         }
     }
