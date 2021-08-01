@@ -40,8 +40,19 @@
             <label for="hobby">Hobby</label><br>
             <input type="radio" onclick="javascript:selected();" id="other" name="type" value="Other">
             <label for="other">Other</label><br>
-            <div id="Education box" style="display:none">Education Selected</div>
-            <div id="Hobby box" style="display:none">Hobby Selected</div>
+            <div id="Education box" style="display:none">
+                <label for="Schedule">Current Schedule</label><br>
+                <label for="Transcript">Up to Date Transcript</label><br>
+                <label for="Scholarship Funds">Amount received in Scholarships: $</label>
+                <input type="number" name="txtScholarship" id="txtScholarship"><br>
+                <label for="Other Funds">Other Funds Available for the school year: $</label>
+                <input type="number" name="txtOtherFunds" id="txtOtherFunds">
+            </div>
+            <div id="Hobby box" style="display:none">
+                <label for="Remaining Balance">Remaining Balance</label>
+                <label for="Reason">Reason: </label>
+                <textarea name="txtHobbyReason" id="txtHobbyReason" rows="5" cols="50"></textarea>
+            </div>
             <div id="Other box" style="display:none">Other Selected</div>
         </form>
     </fieldset>
