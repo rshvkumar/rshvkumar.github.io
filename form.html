@@ -4,9 +4,9 @@
 <script type="text/javascript">
     function selected() {
         if(document.getElementById('education').checked) {
-            document.getElementById('Education box').style.visibility = 'visible';
+            document.getElementById('Education box').style.display = 'block';
         } else {
-            document.getElementById('Education box').style.visibility = 'hidden';
+            document.getElementById('Education box').style.display = 'none';
         }
     }
 </script>
@@ -28,9 +28,9 @@
             <label for="hobby">Hobby</label><br>
             <input type="radio" onclick="javascript:selected();" id="other" name="type" value="Other">
             <label for="other">Other</label><br>
-            <div id="Education box" style="visibility:hidden">Education Selected</div>
-            <div id="Hobby box">Hobby Selected</div>
-            <div id="Other box">Other Selected</div>
+            <div id="Education box" style="display:none">Education Selected</div>
+            <div id="Hobby box" style="display:none">Hobby Selected</div>
+            <div id="Other box" style="display:none">Other Selected</div>
         </form>
     </fieldset>
 </body>
