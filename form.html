@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <title>Request Form</title>
-<script>
-    $(document).ready(function(){
-        $('input[type="radio"]').click(function(){
-            var inputValue = $(this).attr("value");
-            var targetBox = $("." + inputValue);
-            $(".box").not(targetBox).hide();
-            $(targetBox).show();
-        })
-    })
+<script type="text/javascript">
+    function selected() {
+        if(document.getElementById('education').checked) {
+            document.getElementById('Education box').style.visibility = 'visible';
+        } else {
+            document.getElementById('Education box').style.visibility = 'hidden';
+        }
+    }
 </script>
 <body>
     <fieldset>
@@ -20,7 +19,7 @@
                 <input type="text" name="txtTitle" id="txtTitle">
             </p>
             <p>
-                <label for="Amount">Amount: </label>
+                <label for="Amount">Amount: $</label>
                 <input type="number" name="txtAmount" id="txtAmount">
             </p>
             <input type="radio" id="education" name="type" value="Education">
@@ -30,9 +29,9 @@
             <input type="radio" id="other" name="type" value="Other">
             <label for="other">Other</label><br>
 
-            <div class ="Education box">Education Selected</div>
-            <div class="Hobby box">Hobby Selected</div>
-            <div class="Other box">Other Selected</div>
+            <div id="Education box" style="visibility:hidden">Education Selected</div>
+            <div id="Hobby box">Hobby Selected</div>
+            <div id="Other box">Other Selected</div>
         </form>
     </fieldset>
 </body>
