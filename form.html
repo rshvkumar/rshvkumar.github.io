@@ -34,12 +34,14 @@
                 <label for="Amount">Amount: $</label>
                 <input type="number" name="txtAmount" id="txtAmount">
             </p>
-            <input type="radio" onclick="javascript:selected();" id="education" name="type" value="Education">
-            <label for="education">Education</label><br>
-            <input type="radio" onclick="javascript:selected();" id="hobby" name="type" value="Hobby">
-            <label for="hobby">Hobby</label><br>
-            <input type="radio" onclick="javascript:selected();" id="other" name="type" value="Other">
-            <label for="other">Other</label><br>
+            <div id="type">
+                <input type="radio" onclick="javascript:selected();" id="education" name="type" value="Education">
+                <label for="education">Education</label><br>
+                <input type="radio" onclick="javascript:selected();" id="hobby" name="type" value="Hobby">
+                <label for="hobby">Hobby</label><br>
+                <input type="radio" onclick="javascript:selected();" id="other" name="type" value="Other">
+                <label for="other">Other</label><br>
+            </div>
             <div id="Education box" style="display:none">
                 <label for="Schedule">Current Schedule</label><br>
                 <label for="Transcript">Up to Date Transcript</label><br>
@@ -49,7 +51,7 @@
                 <input type="number" name="txtOtherFunds" id="txtOtherFunds">
             </div>
             <div id="Hobby box" style="display:none">
-                <label for="Remaining Balance">Remaining Balance</label>
+                <label for="Remaining Balance">Remaining Balance</label><br>
                 <label for="Reason">Reason: </label>
                 <textarea name="txtHobbyReason" id="txtHobbyReason" rows="5" cols="50"></textarea>
             </div>
